@@ -33,6 +33,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.0.18",
     "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "assets": "workspace:*"
   }
 }
