@@ -1,5 +1,5 @@
 import type {PropsWithChildren, ReactNode} from "react";
-import style from "./FormAuthContainer.module.css";
+import style from "./FormAuth.module.css";
 interface IFormAuthContainer extends PropsWithChildren{
     /**
      * Nom de l'application
@@ -20,7 +20,7 @@ interface IFormAuthContainer extends PropsWithChildren{
     /**
      * Description du formulaire
      */
-    descriptionForm: string,
+    descriptionForm?: string,
 
     /**
      * Contient le reste du formulaire, inputs, buttons ...
@@ -29,7 +29,7 @@ interface IFormAuthContainer extends PropsWithChildren{
 
 }
 
-export const FormAuthContainer = ({titleApp, logo, description, nameForm, descriptionForm, children}: IFormAuthContainer) => {
+export const FormAuth = ({titleApp, logo, description, nameForm, descriptionForm, children}: IFormAuthContainer) => {
 
     return (
         <main className={style.formAuth}>
@@ -43,7 +43,7 @@ export const FormAuthContainer = ({titleApp, logo, description, nameForm, descri
             <section>
                 <div className={style.formContent}>
                     <h1>{nameForm}</h1>
-                    <p>{descriptionForm}</p>
+                    {descriptionForm && <p>{descriptionForm}</p>}
                     {children}
                 </div>
             </section>

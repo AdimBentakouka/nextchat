@@ -18,8 +18,8 @@
     width: 100%;
     max-width: 390px;
 
-    color: #fff;
-    background-color: #16161E;
+    color: var(--formauth-color-primary);
+    background-color: var(--formauth-first-section-bg);
 
     border-radius: 15px 0 0 15px;
 
@@ -30,7 +30,7 @@
 .formAuth section:last-of-type {
     width: 100%;
 
-    background-color: #30313B;
+    background-color: var(--formauth-secondary-section-bg);
 
     border-radius: 0 15px 15px 0;
 }
@@ -69,21 +69,21 @@
     margin: 0;
     padding: 0;
 
-    color: #9E9E9E;
+    color: var(--formauth-color-secondary);
 
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
 
 .formContent {
-    padding: 40px 100px;
+    padding: 40px 70px;
 }
 
 .formContent h1 {
     margin: 0;
     padding: 0;
 
-    color: #FFF;
+    color: var(--formauth-color-primary);
 
     font-family: "Dosis Bold", "Roboto", sans-serif;
     font-size: 40px;
@@ -93,14 +93,14 @@
     margin: 0;
     padding: 0;
 
-    color: #9E9E9E;
+    color: var(--formauth-color-secondary);
 
     font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1273px) {
     .formContent {
-        padding: 40px;
+        padding: 30px;
     }
 }
 

@@ -1,0 +1,60 @@
+.InputTextContainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+}
+
+.InputTextContainer label {
+    color: var(--formauth-color-primary);
+
+}
+
+.InputTextContainer input {
+    color: var(--formauth-color-secondary);
+    font-size: 16px;
+
+    height: 45px;
+    border-radius: 5px;
+    border: solid 1px var(--formauth-color-secondary);
+
+    width: 100%;
+    max-width: 400px;
+
+    outline: none;
+
+    padding: 0 20px;
+}
+
+.InputTextContainer p {
+    color:var(--error-color);
+    margin: 0;
+
+    border-radius: 2px;
+}
+
+.InputTextError input{
+    border-color: var(--error-color);
+}
+
+
+.InputTextError label {
+    color: var(--error-color);
+}
+
+.InputText {
+    display: flex;
+    align-items: center;
+}
+
+.InputText span {
+    user-select: none;
+    cursor: pointer;
+    margin-left: -40px;
+    color: var(--formauth-color-secondary);
+}
+
