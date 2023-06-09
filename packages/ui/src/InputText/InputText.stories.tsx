@@ -1,9 +1,6 @@
 import type {Meta, StoryObj} from "@storybook/react";
 import {InputText} from "./InputText.tsx";
 
-
-
-
 const meta = {
     title: "Components/InputText",
     component: InputText,
