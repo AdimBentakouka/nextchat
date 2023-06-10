@@ -1,4 +1,4 @@
-import {InputHTMLAttributes, ReactNode} from "react";
+import type {InputHTMLAttributes, ReactNode} from "react";
 
 import style from "./CheckBox.module.css";
 
