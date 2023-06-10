@@ -2,9 +2,21 @@ import {InputHTMLAttributes, useState} from "react";
 import style from "./InputText.module.css";
 
 interface IInputText extends InputHTMLAttributes<HTMLInputElement> {
+    /**
+     *   Texte à afficher au dessus de l'input
+     */
     label: string,
+    /**
+     * Message d'erreur
+     */
     error?: string,
+    /**
+     * Affiche un texte par défaut
+     */
     placeholder: string,
+    /**
+     * Les types pris en charges par se composant
+     */
     type: "text" | "email" | "password"
 }
 

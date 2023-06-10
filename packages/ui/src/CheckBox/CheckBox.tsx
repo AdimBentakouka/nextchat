@@ -1,9 +1,12 @@
-import {InputHTMLAttributes} from "react";
+import {InputHTMLAttributes, ReactNode} from "react";
 
 import style from "./CheckBox.module.css";
 
 interface ICheckBox extends InputHTMLAttributes<HTMLInputElement>{
-    label: string
+    /**
+     * Label à afficher à droite de la checkbox
+     */
+    label: ReactNode
 }
 export const CheckBox = ({label, ...rest} : ICheckBox) => {
     return (
