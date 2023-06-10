@@ -1,0 +1,76 @@
+.separator {
+    margin: 4em 1em;
+    text-align: center;
+}
+
+.separator div {
+    text-transform: uppercase;
+
+    color: #A5A5A5;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+.separator .horizontal {
+    max-width: 30em;
+}
+
+.separator .vertical {
+    height: 4em;
+}
+
+
+.separator div::before,
+.separator div::after {
+    content: "";
+}
+
+.vertical {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.vertical::before,
+.vertical::after {
+    position: absolute;
+    border-left: 1px solid #ccc;
+    height: calc(50% - 0.85em);
+    left: 50%;
+    margin-left: -1px;
+}
+
+/* ::before on top */
+.vertical::before {
+    top: 0;
+}
+
+/* ::after on bottom */
+.vertical::after {
+    bottom: 0;
+}
+
+/* Horizontal */
+.horizontal::before,
+.horizontal::after {
+    position: relative;
+    border-top: 1px solid #A5A5A5;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+.horizontal::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.horizontal::after {
+    left: 0.5em;
+    margin-right: -50%;
+}

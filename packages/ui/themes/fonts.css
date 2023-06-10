@@ -1,0 +1,29 @@
+/* Material Symbol */
+@import "material-symbols";
+
+/* Roboto */
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("./fonts/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("./fonts/roboto/Roboto-Light.ttf");
+}
+
+/* Dosis */
+@font-face {
+    font-family: "Dosis";
+    src: url("./fonts/dosis/Dosis-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Dosis Bold";
+    src: url("./fonts/dosis/Dosis-Bold.ttf");
+}

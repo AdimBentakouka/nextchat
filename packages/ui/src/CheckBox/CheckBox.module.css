@@ -1,0 +1,10 @@
+.CheckBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.CheckBox label {
+    font-family: Roboto, sans-serif;
+    color: var(--formauth-color-secondary);
+}

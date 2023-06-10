@@ -1,4 +1,8 @@
 :root{
-    --test: #F00;
-    --test-2: #0F0;
+    --formauth-first-section-bg: #16161E;
+    --formauth-secondary-section-bg: #30313B;
+    --formauth-color-primary: #fff;
+    --formauth-color-secondary:  #9E9E9E;
+
+    --error-color: #FF5555;
 }
